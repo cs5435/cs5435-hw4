@@ -7,6 +7,7 @@ void foo( char* temp )
 {
   char name[4];
 
+  // copy the first 12 chars of temp to name
   strncpy(name, temp, 12);
 }
 
