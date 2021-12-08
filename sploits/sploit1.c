@@ -13,7 +13,7 @@ int main(void)
   char *env[1];
 
   args[0] = TARGET;
-  args[1] = "student"; 
+  args[1] = "stu"; 
   args[2] = NULL;
   
   env[0] = NULL;
