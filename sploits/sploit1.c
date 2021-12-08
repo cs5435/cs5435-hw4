@@ -11,9 +11,9 @@ int main(void)
 {
   char *args[3]; 
   char *env[1];
-
+  
   args[0] = TARGET;
-  args[1] = "stu"; 
+  args[1] = "student"; 
   args[2] = NULL;
   
   env[0] = NULL;
