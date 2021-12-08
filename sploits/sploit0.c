@@ -55,7 +55,7 @@ int main(void)
 
     // 0x90 outside lower bound
     // strcat(str, "\x10\xfb\xff\xbf");
-    strcat(str, "\x2b\xfb\xff\xbf");
+    strcat(str, "\x2a\xfb\xff\xbf");
 
 
   }
