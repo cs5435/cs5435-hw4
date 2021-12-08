@@ -14,8 +14,8 @@ int main(void)
 
   char str[408];
   memset(str, 0, 408);
-  strcpy(str, "\x90\x90\x90");
-  for (int i = 0; i < 200; ++i)
+  // strcpy(str, "\x90\x90\x90");
+  for (int i = 0; i < 203; ++i)
   {
   	strcat(str, "\x90");
   }
