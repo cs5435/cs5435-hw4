@@ -30,11 +30,11 @@ int main(void)
 
     // success
     // - 150
-  	// strcat(str, "\x70\xfb\xff\xbf");
+  	strcat(str, "\x70\xfb\xff\xbf");
     // - 151
   	// strcat(str, "\x6f\xfb\xff\xbf");
     // - 152
-  	strcat(str, "\x6e\xfb\xff\xbf");
+  	// strcat(str, "\x6e\xfb\xff\xbf");
     // - 153
   	// strcat(str, "\x6d\xfb\xff\xbf");
 
